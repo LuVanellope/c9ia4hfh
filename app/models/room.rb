@@ -12,6 +12,7 @@
 #  image_url   :string
 #
 
+
 class Room < ActiveRecord::Base
   validates :beds, :guests,:title, :image_url, :description, :price_per_night, presence: true
   validates :beds, :guests, numericality: {only_integer: true}
